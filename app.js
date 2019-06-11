@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
   res.send("WEBHOOK!");
 });
 
-app.get("/hooks/github", (req, res) => {
+app.post("/hooks/github", (req, res) => {
   res.send("GITHUB WEBHOOK!");
 });
 
