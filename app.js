@@ -15,11 +15,6 @@ app.get("/", (req, res) => {
   res.send("WEBHOOK!");
 });
 
-app.post("/hooks/github", (req, res) => {
-  console.log("GITHIB WEBHOOK RECEIVED!!!");
-  res.send("GITHUB WEBHOOK!");
-});
-
 // Accepts POST requests at /webhook endpoint
 app.post("/webhook", (req, res) => {
   // Parse the request body from the POST
